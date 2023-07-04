@@ -3,30 +3,48 @@ import React, {Component} from 'react'
 export class ComponentTopBar extends Component {
     render() {
         return (
-            <div className="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block">
-                <div className="row gx-0 align-items-center">
-                    <div className="col-lg-6 ps-5 text-start">
-                        <a className="h-100 d-inline-flex align-items-center me-4 text-light" href="tel:+012 345 6789">
-                            <small className="mdi mdi-phone me-2"></small>
-                            <small>+012 345 6789</small>
-                        </a>
-                        <a className="h-100 d-inline-flex align-items-center me-4 text-light" href="mailto:info@example.com">
-                            <small className="mdi mdi-email me-2"></small>
-                            <small>info@example.com</small>
-                        </a>
-                        <a className="h-100 d-inline-flex align-items-center me-4 text-light">
-                            <small className="mdi mdi-whatsapp me-2"></small>
-                            <small>+012 345 6789</small>
-                        </a>
-                    </div>
-                    <div className="col-lg-6 pe-5 text-end">
-                        <div className="h-100 d-inline-flex align-items-center">
-                            <a className="text-white-50 ms-4" href=""
-                            >Kargo Takip</a>
-                            <a className="text-white-50 ms-4" href=""
-                            >Hakkimizda</a>
-                            <a className="text-white-50 ms-4" href=""
-                            >Iletisim</a>
+            <div className="header-top header-top-ptb-1 d-none d-lg-block">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-xl-3 col-lg-4">
+                            <div className="header-info">
+                                <ul>
+                                    <li><i className="fi-rs-smartphone"></i> <a href="#">(+01) - 2345 - 6789</a></li>
+                                    <li><i className="fi-rs-marker"></i><a href="page-contact.html">Our location</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="col-xl-6 col-lg-4">
+                            <div className="text-center">
+                                <div id="news-flash" className="d-inline-block">
+                                    <ul>
+                                        <li>Get great devices up to 50% off <a href="shop-grid-right.html">View
+                                            details</a></li>
+                                        <li>Supper Value Deals - Save more with coupons</li>
+                                        <li>Trendy 25silver jewelry, save up 35% off today <a
+                                            href="shop-grid-right.html">Shop now</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-3 col-lg-4">
+                            <div className="header-info header-info-right">
+                                <ul>
+                                    <li>
+                                        <a className="language-dropdown-active" href="#"> <i
+                                            className="fi-rs-world"></i> English <i
+                                            className="fi-rs-angle-small-down"></i></a>
+                                        <ul className="language-dropdown">
+                                            <li><a href="#"><img src="images/flag-fr.png" />Français</a></li>
+                                            <li><a href="#"><img src="images/flag-dt.png" />Deutsch</a></li>
+                                            <li><a href="#"><img src="images/flag-ru.png" />Pусский</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><i className="fi-rs-user"></i><a href="page-login-register.html">Log In / Sign
+                                        Up</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
