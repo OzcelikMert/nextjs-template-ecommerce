@@ -9,6 +9,7 @@ import ComponentBackToTop from "components/tools/backToTop";
 import ComponentFooter from "components/tools/footer";
 import ComponentTopBar from "components/tools/topBar";
 import ComponentHeader from "components/tools/header";
+import ComponentMobileNavbar from "components/tools/mobileNavbar";
 
 type PageState = {};
 
@@ -44,11 +45,12 @@ class ComponentApp extends Component<PageProps, PageState> {
                         <ComponentTopBar {...commonProps} />
                         <ComponentHeader {...commonProps} />
                         <ComponentNavbar {...commonProps} />
+                        <ComponentMobileNavbar {...commonProps} />
                     </header>
                     <ComponentBackToTop {...commonProps} />
-                    <div className="page-content">
+                    <main className="main">
                         <this.props.Component {...commonProps} />
-                    </div>
+                    </main>
                     <ComponentFooter {...commonProps} />
                 </ProviderNoFound>
             </div>
