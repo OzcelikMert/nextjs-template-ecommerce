@@ -16,7 +16,7 @@ import {PostTermGetResultDocument} from "types/services/postTerm";
 import Variable from "library/variable";
 import ComponentPagination from "components/tools/pagination";
 import PagePaths from "constants/pagePaths";
-import ComponentPageHeader from "components/tools/pageHeader";
+import ComponentPageHeader from "components/tools/carousel";
 
 const perPageItemCount = 6;
 

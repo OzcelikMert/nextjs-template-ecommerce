@@ -14,7 +14,7 @@ import ThemeWidgetCategories from "components/theme/widgets/categories";
 import {PostTermGetResultDocument} from "types/services/postTerm";
 import postTermService from "services/postTerm.service";
 import ComponentError404 from "components/error/404";
-import ComponentPageHeader from "components/tools/pageHeader";
+import ComponentPageHeader from "components/tools/carousel";
 
 type PageState = {};
 

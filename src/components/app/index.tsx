@@ -4,10 +4,11 @@ import Head from "next/head";
 import imageSourceUtil from "utils/imageSource.util";
 import ProviderNoFound from "components/providers/noFound";
 import ComponentHead from "components/head";
-import Navbar from "components/tools/navbar";
-import BackToTop from "components/tools/backToTop";
-import Footer from "components/tools/footer";
-import TopBar from "components/tools/topBar";
+import ComponentNavbar from "components/tools/navbar";
+import ComponentBackToTop from "components/tools/backToTop";
+import ComponentFooter from "components/tools/footer";
+import ComponentTopBar from "components/tools/topBar";
+import ComponentHeader from "components/tools/header";
 
 type PageState = {};
 
@@ -39,13 +40,16 @@ class ComponentApp extends Component<PageProps, PageState> {
                 </Head>
                 <ProviderNoFound {...commonProps}>
                     <ComponentHead {...commonProps} />
-                    <TopBar {...commonProps} />
-                    <Navbar {...commonProps} />
-                    <BackToTop {...commonProps} />
+                    <header className="header-area header-style-1 header-height-2">
+                        <ComponentTopBar {...commonProps} />
+                        <ComponentHeader {...commonProps} />
+                        <ComponentNavbar {...commonProps} />
+                    </header>
+                    <ComponentBackToTop {...commonProps} />
                     <div className="page-content">
                         <this.props.Component {...commonProps} />
                     </div>
-                    <Footer {...commonProps} />
+                    <ComponentFooter {...commonProps} />
                 </ProviderNoFound>
             </div>
         );

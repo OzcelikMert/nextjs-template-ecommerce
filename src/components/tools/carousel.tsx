@@ -6,7 +6,7 @@ type PageProps = {
     title: string
 };
 
-export default class ComponentPageHeader extends Component<PageProps, PageState>  {
+export default class ComponentCarousel extends Component<PageProps, PageState>  {
     constructor(props: PageProps) {
         super(props);
         this.state = {};

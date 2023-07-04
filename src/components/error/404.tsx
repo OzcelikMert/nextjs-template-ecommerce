@@ -2,7 +2,7 @@ import {PagePropCommonDocument} from "types/pageProps";
 import React, {Component} from "react";
 import i18Lib from "lib/i18.lib";
 import linkUtil from "utils/link.util";
-import ComponentPageHeader from "components/tools/pageHeader";
+import ComponentPageHeader from "components/tools/carousel";
 
 type PageState = {};
 
