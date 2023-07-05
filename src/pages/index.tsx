@@ -9,6 +9,14 @@ import {PageTypeId, PostTypeId, StatusId} from "constants/index";
 import {PostGetManyResultDocument} from "types/services/post";
 import pageLib from "lib/page.lib";
 import ComponentThemeFeatures from "components/theme/features";
+import ComponentThemeProductTabs from "components/theme/productTabs";
+import ComponentThemeBannerOne from "components/theme/bannerOne";
+import ComponentThemePopularCategories from "components/theme/popularCategories";
+import ComponentThemeDeals from "components/theme/deals";
+import ComponentThemeFeaturedBrands from "components/theme/featuredBrands";
+import ComponentThemeMonthlyBestSell from "components/theme/monthlyBestSell";
+import ComponentThemeBannerTwo from "components/theme/bannerTwo";
+import ComponentThemeTopProducts from "components/theme/topProducts";
 
 type PageState = {};
 
@@ -23,11 +31,19 @@ export default class PageHome extends Component<PageProps, PageState> {
 
     render() {
         //<SelectedComponents {...this.props} />
-        return (
-            <div className="page page-home">
-                <ComponentCarousel {...this.props}/>
-                <ComponentThemeFeatures {...this.props} />
-            </div>
+                return (
+                <div className="page page-home">
+                    <ComponentCarousel {...this.props} />
+                    <ComponentThemeFeatures {...this.props} />
+                    <ComponentThemeProductTabs {...this.props} />
+                    <ComponentThemeBannerOne {...this.props} />
+                    <ComponentThemePopularCategories {...this.props} />
+                    <ComponentThemeDeals {...this.props} />
+                    <ComponentThemeFeaturedBrands {...this.props} />
+                    <ComponentThemeMonthlyBestSell {...this.props} />
+                    <ComponentThemeBannerTwo {...this.props} />
+                    <ComponentThemeTopProducts {...this.props} />
+                </div>
         );
     }
 }

@@ -9,7 +9,7 @@ type PageState = {};
 
 type PageProps = {} & PagePropCommonDocument<{ sliders: PostGetManyResultDocument[] }>;
 
-export default class ThemeCarousel extends Component<PageProps, PageState> {
+export default class ComponentThemeCarousel extends Component<PageProps, PageState> {
     constructor(props: PageProps) {
         super(props);
     }
