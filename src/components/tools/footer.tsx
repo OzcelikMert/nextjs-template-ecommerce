@@ -57,7 +57,7 @@ export default class ComponentFooter extends Component<PageProps, PageState> {
                             <div className="col-lg-7 mb-md-3 mb-lg-0">
                                 <div className="row align-items-center">
                                     <div className="col flex-horizontal-center">
-                                        <img className="icon-email" src="fonts/icon-email.svg" />
+                                        <img className="icon-email" src="assets/fonts/icon-email.svg" />
                                             <h4 className="font-size-20 mb-0 ml-3">Sign up to Newsletter</h4>
                                     </div>
                                     <div className="col my-4 my-md-0 des">
@@ -82,7 +82,7 @@ export default class ComponentFooter extends Component<PageProps, PageState> {
                             <div className="col-lg-4 col-md-6">
                                 <div className="widget-about font-md mb-md-5 mb-lg-0">
                                     <div className="logo logo-width-1 wow fadeIn animated">
-                                        <a href="index.html"><img src="fonts/logo.svg" alt="logo" /></a>
+                                        <a href="index.html"><img src="assets/fonts/logo.svg" alt="logo" /></a>
                                     </div>
                                     <h5 className="mt-20 mb-10 fw-600 text-grey-4 wow fadeIn animated">Contact</h5>
                                     <p className="wow fadeIn animated">
@@ -96,11 +96,11 @@ export default class ComponentFooter extends Component<PageProps, PageState> {
                                     </p>
                                     <h5 className="mb-10 mt-30 fw-600 text-grey-4 wow fadeIn animated">Follow Us</h5>
                                     <div className="mobile-social-icon wow fadeIn animated mb-sm-5 mb-md-0">
-                                        <a href="#"><img src="fonts/icon-facebook.svg" /></a>
-                                        <a href="#"><img src="fonts/icon-twitter.svg" /></a>
-                                        <a href="#"><img src="fonts/icon-instagram.svg" /></a>
-                                        <a href="#"><img src="fonts/icon-pinterest.svg" /></a>
-                                        <a href="#"><img src="fonts/icon-youtube.svg" /></a>
+                                        <a href="#"><img src="assets/fonts/icon-facebook.svg" /></a>
+                                        <a href="#"><img src="assets/fonts/icon-twitter.svg" /></a>
+                                        <a href="#"><img src="assets/fonts/icon-instagram.svg" /></a>
+                                        <a href="#"><img src="assets/fonts/icon-pinterest.svg" /></a>
+                                        <a href="#"><img src="assets/fonts/icon-youtube.svg" /></a>
                                     </div>
                                 </div>
                             </div>
@@ -133,14 +133,14 @@ export default class ComponentFooter extends Component<PageProps, PageState> {
                                         <p className="wow fadeIn animated">From App Store or Google Play</p>
                                         <div className="download-app wow fadeIn animated">
                                             <a href="#" className="hover-up mb-sm-4 mb-lg-0"><img className="active"
-                                                                                                  src="images/app-store.jpg"
+                                                                                                  src="assets/images/app-store.jpg"
                                                                                                   /></a>
-                                            <a href="#" className="hover-up"><img src="images/google-play.jpg" /></a>
+                                            <a href="#" className="hover-up"><img src="assets/images/google-play.jpg" /></a>
                                         </div>
                                     </div>
                                     <div className="col-md-4 col-lg-12 mt-md-3 mt-lg-0">
                                         <p className="mb-20 wow fadeIn animated">Secured Payment Gateways</p>
-                                        <img className="wow fadeIn animated" src="images/payment-method.png" />
+                                        <img className="wow fadeIn animated" src="assets/images/payment-method.png" />
                                     </div>
                                 </div>
                             </div>

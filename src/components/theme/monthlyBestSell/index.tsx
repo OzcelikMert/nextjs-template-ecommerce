@@ -48,7 +48,7 @@ export default class ComponentThemeMonthlyBestSell extends Component<PageProps, 
                     <div className="row">
                         <div className="col-lg-3 d-none d-lg-flex">
                             <div className="banner-img style-2 wow fadeIn animated">
-                                <img src="images/banner-9.jpg" />
+                                <img src="assets/images/banner-9.jpg" />
                                     <div className="banner-text">
                                         <span>Woman Area</span>
                                         <h4 className="mt-5">Save 17% on <br/>Clothing</h4>
@@ -70,9 +70,9 @@ export default class ComponentThemeMonthlyBestSell extends Component<PageProps, 
                                                 <div className="product-img-action-wrap">
                                                     <div className="product-img product-img-zoom">
                                                         <a href="shop-product-right.html">
-                                                            <img className="default-img" src="images/product-1-1.jpg"
+                                                            <img className="default-img" src="assets/images/product-1-1.jpg"
                                                                  />
-                                                                <img className="hover-img" src="images/product-1-2.jpg"
+                                                                <img className="hover-img" src="assets/images/product-1-2.jpg"
                                                                      />
                                                         </a>
                                                     </div>
@@ -117,9 +117,9 @@ export default class ComponentThemeMonthlyBestSell extends Component<PageProps, 
                                                 <div className="product-img-action-wrap">
                                                     <div className="product-img product-img-zoom">
                                                         <a href="shop-product-right.html">
-                                                            <img className="default-img" src="images/product-2-1.jpg"
+                                                            <img className="default-img" src="assets/images/product-2-1.jpg"
                                                                  />
-                                                                <img className="hover-img" src="images/product-2-2.jpg"
+                                                                <img className="hover-img" src="assets/images/product-2-2.jpg"
                                                                      />
                                                         </a>
                                                     </div>
@@ -164,9 +164,9 @@ export default class ComponentThemeMonthlyBestSell extends Component<PageProps, 
                                                 <div className="product-img-action-wrap">
                                                     <div className="product-img product-img-zoom">
                                                         <a href="shop-product-right.html">
-                                                            <img className="default-img" src="images/product-3-1.jpg"
+                                                            <img className="default-img" src="assets/images/product-3-1.jpg"
                                                                  />
-                                                                <img className="hover-img" src="images/product-3-2.jpg"
+                                                                <img className="hover-img" src="assets/images/product-3-2.jpg"
                                                                      />
                                                         </a>
                                                     </div>
@@ -211,9 +211,9 @@ export default class ComponentThemeMonthlyBestSell extends Component<PageProps, 
                                                 <div className="product-img-action-wrap">
                                                     <div className="product-img product-img-zoom">
                                                         <a href="shop-product-right.html">
-                                                            <img className="default-img" src="images/product-4-1.jpg"
+                                                            <img className="default-img" src="assets/images/product-4-1.jpg"
                                                                  />
-                                                                <img className="hover-img" src="images/product-4-2.jpg"
+                                                                <img className="hover-img" src="assets/images/product-4-2.jpg"
                                                                      />
                                                         </a>
                                                     </div>
@@ -258,9 +258,9 @@ export default class ComponentThemeMonthlyBestSell extends Component<PageProps, 
                                                 <div className="product-img-action-wrap">
                                                     <div className="product-img product-img-zoom">
                                                         <a href="shop-product-right.html">
-                                                            <img className="default-img" src="images/product-11-1.jpg"
+                                                            <img className="default-img" src="assets/images/product-11-1.jpg"
                                                                  />
-                                                                <img className="hover-img" src="images/product-11-2.jpg"
+                                                                <img className="hover-img" src="assets/images/product-11-2.jpg"
                                                                      />
                                                         </a>
                                                     </div>
@@ -315,9 +315,9 @@ export default class ComponentThemeMonthlyBestSell extends Component<PageProps, 
                                                 <div className="product-img-action-wrap">
                                                     <div className="product-img product-img-zoom">
                                                         <a href="shop-product-right.html">
-                                                            <img className="default-img" src="images/product-6-1.jpg"
+                                                            <img className="default-img" src="assets/images/product-6-1.jpg"
                                                                  />
-                                                                <img className="hover-img" src="images/product-6-2.jpg"
+                                                                <img className="hover-img" src="assets/images/product-6-2.jpg"
                                                                      />
                                                         </a>
                                                     </div>
@@ -362,9 +362,9 @@ export default class ComponentThemeMonthlyBestSell extends Component<PageProps, 
                                                 <div className="product-img-action-wrap">
                                                     <div className="product-img product-img-zoom">
                                                         <a href="shop-product-right.html">
-                                                            <img className="default-img" src="images/product-7-1.jpg"
+                                                            <img className="default-img" src="assets/images/product-7-1.jpg"
                                                                  />
-                                                                <img className="hover-img" src="images/product-7-2.jpg"
+                                                                <img className="hover-img" src="assets/images/product-7-2.jpg"
                                                                      />
                                                         </a>
                                                     </div>
@@ -409,9 +409,9 @@ export default class ComponentThemeMonthlyBestSell extends Component<PageProps, 
                                                 <div className="product-img-action-wrap">
                                                     <div className="product-img product-img-zoom">
                                                         <a href="shop-product-right.html">
-                                                            <img className="default-img" src="images/product-5-1.jpg"
+                                                            <img className="default-img" src="assets/images/product-5-1.jpg"
                                                                  />
-                                                                <img className="hover-img" src="images/product-5-1.jpg"
+                                                                <img className="hover-img" src="assets/images/product-5-1.jpg"
                                                                      />
                                                         </a>
                                                     </div>
@@ -456,9 +456,9 @@ export default class ComponentThemeMonthlyBestSell extends Component<PageProps, 
                                                 <div className="product-img-action-wrap">
                                                     <div className="product-img product-img-zoom">
                                                         <a href="shop-product-right.html">
-                                                            <img className="default-img" src="images/product-10-1.jpg"
+                                                            <img className="default-img" src="assets/images/product-10-1.jpg"
                                                                  />
-                                                                <img className="hover-img" src="images/product-10-2.jpg"
+                                                                <img className="hover-img" src="assets/images/product-10-2.jpg"
                                                                      />
                                                         </a>
                                                     </div>
@@ -503,9 +503,9 @@ export default class ComponentThemeMonthlyBestSell extends Component<PageProps, 
                                                 <div className="product-img-action-wrap">
                                                     <div className="product-img product-img-zoom">
                                                         <a href="shop-product-right.html">
-                                                            <img className="default-img" src="images/product-12-1.jpg"
+                                                            <img className="default-img" src="assets/images/product-12-1.jpg"
                                                                  />
-                                                                <img className="hover-img" src="images/product-12-2.jpg"
+                                                                <img className="hover-img" src="assets/images/product-12-2.jpg"
                                                                      />
                                                         </a>
                                                     </div>
@@ -560,9 +560,9 @@ export default class ComponentThemeMonthlyBestSell extends Component<PageProps, 
                                                 <div className="product-img-action-wrap">
                                                     <div className="product-img product-img-zoom">
                                                         <a href="shop-product-right.html">
-                                                            <img className="default-img" src="images/product-8-1.jpg"
+                                                            <img className="default-img" src="assets/images/product-8-1.jpg"
                                                                  />
-                                                                <img className="hover-img" src="images/product-8-2.jpg"
+                                                                <img className="hover-img" src="assets/images/product-8-2.jpg"
                                                                      />
                                                         </a>
                                                     </div>
@@ -607,9 +607,9 @@ export default class ComponentThemeMonthlyBestSell extends Component<PageProps, 
                                                 <div className="product-img-action-wrap">
                                                     <div className="product-img product-img-zoom">
                                                         <a href="shop-product-right.html">
-                                                            <img className="default-img" src="images/product-13-1.jpg"
+                                                            <img className="default-img" src="assets/images/product-13-1.jpg"
                                                                  />
-                                                                <img className="hover-img" src="images/product-13-2.jpg"
+                                                                <img className="hover-img" src="assets/images/product-13-2.jpg"
                                                                      />
                                                         </a>
                                                     </div>
@@ -654,9 +654,9 @@ export default class ComponentThemeMonthlyBestSell extends Component<PageProps, 
                                                 <div className="product-img-action-wrap">
                                                     <div className="product-img product-img-zoom">
                                                         <a href="shop-product-right.html">
-                                                            <img className="default-img" src="images/product-14-1.jpg"
+                                                            <img className="default-img" src="assets/images/product-14-1.jpg"
                                                                  />
-                                                                <img className="hover-img" src="images/product-14-2.jpg"
+                                                                <img className="hover-img" src="assets/images/product-14-2.jpg"
                                                                      />
                                                         </a>
                                                     </div>
@@ -701,9 +701,9 @@ export default class ComponentThemeMonthlyBestSell extends Component<PageProps, 
                                                 <div className="product-img-action-wrap">
                                                     <div className="product-img product-img-zoom">
                                                         <a href="shop-product-right.html">
-                                                            <img className="default-img" src="images/product-15-1.jpg"
+                                                            <img className="default-img" src="assets/images/product-15-1.jpg"
                                                                  />
-                                                                <img className="hover-img" src="images/product-15-2.jpg"
+                                                                <img className="hover-img" src="assets/images/product-15-2.jpg"
                                                                      />
                                                         </a>
                                                     </div>
@@ -748,8 +748,8 @@ export default class ComponentThemeMonthlyBestSell extends Component<PageProps, 
                                                 <div className="product-img-action-wrap">
                                                     <div className="product-img product-img-zoom">
                                                         <a href="shop-product-right.html">
-                                                            <img className="default-img" src="images/product-11-1.jpg"/>
-                                                                <img className="hover-img" src="images/product-11-2.jpg"/>
+                                                            <img className="default-img" src="assets/images/product-11-1.jpg"/>
+                                                                <img className="hover-img" src="assets/images/product-11-2.jpg"/>
                                                         </a>
                                                     </div>
                                                     <div className="product-action-1">

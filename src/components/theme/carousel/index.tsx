@@ -4,6 +4,7 @@ import {Carousel} from "react-responsive-carousel";
 import {PostGetManyResultDocument} from "types/services/post";
 import {PagePropCommonDocument} from "types/pageProps";
 import Image from "next/image";
+import Slider from "react-slick";
 
 type PageState = {};
 
@@ -14,11 +15,24 @@ export default class ComponentThemeCarousel extends Component<PageProps, PageSta
         super(props);
     }
 
+
+    settings = {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        loop: true,
+        dots: true,
+        arrows: true,
+        prevArrow: <span><div className="slider-arrow hero-slider-1-arrow"><span className="slider-btn slider-prev"><i className="mdi mdi-chevron-left"></i></span></div></span>,
+        nextArrow: <span><div className="slider-arrow hero-slider-1-arrow"><span className="slider-btn slider-next"><i className="mdi mdi-chevron-right"></i></span></div></span>,
+        autoplay: true,
+    };
+
     render() {
         return (
             <section className="home-slider position-relative pt-50">
-                <div className="hero-slider-1 dot-style-1 dot-style-1-position-1">
-                    <div className="single-hero-slider single-animation-wrap">
+                <Slider className="hero-slider-1 dot-style-1 dot-style-1-position-1" {...this.settings}>
+                    <div>
                         <div className="container">
                             <div className="row align-items-center slider-animated-1">
                                 <div className="col-lg-5 col-md-6">
@@ -33,13 +47,13 @@ export default class ComponentThemeCarousel extends Component<PageProps, PageSta
                                 </div>
                                 <div className="col-lg-7 col-md-6">
                                     <div className="single-slider-img single-slider-img-1">
-                                        <img className="animated slider-1-1" src="images/slider-1.png" />
+                                        <img className="animated slider-1-1" src="assets/images/slider-1.png" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="single-hero-slider single-animation-wrap">
+                    <div>
                         <div className="container">
                             <div className="row align-items-center slider-animated-1">
                                 <div className="col-lg-5 col-md-6">
@@ -54,13 +68,13 @@ export default class ComponentThemeCarousel extends Component<PageProps, PageSta
                                 </div>
                                 <div className="col-lg-7 col-md-6">
                                     <div className="single-slider-img single-slider-img-1">
-                                        <img className="animated slider-1-2" src="images/slider-2.png" />
+                                        <img className="animated slider-1-2" src="assets/images/slider-2.png" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="single-hero-slider single-animation-wrap">
+                    <div>
                         <div className="container">
                             <div className="row align-items-center slider-animated-1">
                                 <div className="col-lg-5 col-md-6">
@@ -75,14 +89,13 @@ export default class ComponentThemeCarousel extends Component<PageProps, PageSta
                                 </div>
                                 <div className="col-lg-7 col-md-6">
                                     <div className="single-slider-img single-slider-img-1">
-                                        <img className="animated slider-1-3" src="images/slider-3.png" />
+                                        <img className="animated slider-1-3" src="assets/images/slider-3.png" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="slider-arrow hero-slider-1-arrow"></div>
+                </Slider>
             </section>
         );
     }

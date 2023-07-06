@@ -25,7 +25,7 @@ export default class ComponentMobileNavbar extends Component<PageProps, PageStat
                 <div className="mobile-header-wrapper-inner">
                     <div className="mobile-header-top">
                         <div className="mobile-header-logo">
-                            <a href="index.html"><img src="fonts/logo.svg" alt="logo"/></a>
+                            <a href="index.html"><img src="assets/fonts/logo.svg" alt="logo"/></a>
                         </div>
                         <div className="mobile-menu-close close-style-wrap close-style-position-inherit">
                             <button className="close-style search-close">
@@ -191,11 +191,11 @@ export default class ComponentMobileNavbar extends Component<PageProps, PageStat
                         </div>
                         <div className="mobile-social-icon">
                             <h5 className="mb-15 text-grey-4">Follow Us</h5>
-                            <a href="#"><img src="fonts/icon-facebook.svg" /></a>
-                            <a href="#"><img src="fonts/icon-twitter.svg" /></a>
-                            <a href="#"><img src="fonts/icon-instagram.svg" /></a>
-                            <a href="#"><img src="fonts/icon-pinterest.svg" /></a>
-                            <a href="#"><img src="fonts/icon-youtube.svg" /></a>
+                            <a href="#"><img src="assets/fonts/icon-facebook.svg" /></a>
+                            <a href="#"><img src="assets/fonts/icon-twitter.svg" /></a>
+                            <a href="#"><img src="assets/fonts/icon-instagram.svg" /></a>
+                            <a href="#"><img src="assets/fonts/icon-pinterest.svg" /></a>
+                            <a href="#"><img src="assets/fonts/icon-youtube.svg" /></a>
                         </div>
                     </div>
                 </div>

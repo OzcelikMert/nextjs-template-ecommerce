@@ -19,7 +19,7 @@ export default class ComponentThemeBannerOne extends Component<PageProps, PageSt
             <section className="banner-2 section-padding pb-0">
                 <div className="container">
                     <div className="banner-img banner-big wow fadeIn animated f-none">
-                        <img src="images/banner-4.png" />
+                        <img src="assets/images/banner-4.png" />
                             <div className="banner-text d-md-block d-none">
                                 <h4 className="mb-15 mt-40 text-brand">Repair Services</h4>
                                 <h1 className="fw-600 mb-20">We're an Apple <br/>Authorised Service Provider</h1>

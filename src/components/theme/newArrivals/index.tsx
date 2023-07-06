@@ -27,8 +27,8 @@ export default class ComponentThemeNewArrivals extends Component<PageProps, Page
                                 <div className="product-img-action-wrap">
                                     <div className="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img className="default-img" src="images/product-2-1.jpg" />
-                                                <img className="hover-img" src="images/product-2-2.jpg" />
+                                            <img className="default-img" src="assets/images/product-2-1.jpg" />
+                                                <img className="hover-img" src="assets/images/product-2-2.jpg" />
                                         </a>
                                     </div>
                                     <div className="product-action-1">
@@ -60,8 +60,8 @@ export default class ComponentThemeNewArrivals extends Component<PageProps, Page
                                 <div className="product-img-action-wrap">
                                     <div className="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img className="default-img" src="images/product-4-1.jpg" />
-                                                <img className="hover-img" src="images/product-4-2.jpg" />
+                                            <img className="default-img" src="assets/images/product-4-1.jpg" />
+                                                <img className="hover-img" src="assets/images/product-4-2.jpg" />
                                         </a>
                                     </div>
                                     <div className="product-action-1">
@@ -93,8 +93,8 @@ export default class ComponentThemeNewArrivals extends Component<PageProps, Page
                                 <div className="product-img-action-wrap">
                                     <div className="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img className="default-img" src="images/product-15-1.jpg" />
-                                                <img className="hover-img" src="images/product-15-2.jpg" />
+                                            <img className="default-img" src="assets/images/product-15-1.jpg" />
+                                                <img className="hover-img" src="assets/images/product-15-2.jpg" />
                                         </a>
                                     </div>
                                     <div className="product-action-1">
@@ -126,8 +126,8 @@ export default class ComponentThemeNewArrivals extends Component<PageProps, Page
                                 <div className="product-img-action-wrap">
                                     <div className="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img className="default-img" src="images/product-3-1.jpg" />
-                                                <img className="hover-img" src="images/product-3-2.jpg" />
+                                            <img className="default-img" src="assets/images/product-3-1.jpg" />
+                                                <img className="hover-img" src="assets/images/product-3-2.jpg" />
                                         </a>
                                     </div>
                                     <div className="product-action-1">
@@ -159,8 +159,8 @@ export default class ComponentThemeNewArrivals extends Component<PageProps, Page
                                 <div className="product-img-action-wrap">
                                     <div className="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img className="default-img" src="images/product-9-1.jpg" />
-                                                <img className="hover-img" src="images/product-9-2.jpg" />
+                                            <img className="default-img" src="assets/images/product-9-1.jpg" />
+                                                <img className="hover-img" src="assets/images/product-9-2.jpg" />
                                         </a>
                                     </div>
                                     <div className="product-action-1">
@@ -192,8 +192,8 @@ export default class ComponentThemeNewArrivals extends Component<PageProps, Page
                                 <div className="product-img-action-wrap">
                                     <div className="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img className="default-img" src="images/product-7-1.jpg" />
-                                                <img className="hover-img" src="images/product-7-2.jpg" />
+                                            <img className="default-img" src="assets/images/product-7-1.jpg" />
+                                                <img className="hover-img" src="assets/images/product-7-2.jpg" />
                                         </a>
                                     </div>
                                     <div className="product-action-1">
@@ -225,8 +225,8 @@ export default class ComponentThemeNewArrivals extends Component<PageProps, Page
                                 <div className="product-img-action-wrap">
                                     <div className="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img className="default-img" src="images/product-1-1.jpg" />
-                                                <img className="hover-img" src="images/product-1-2.jpg" />
+                                            <img className="default-img" src="assets/images/product-1-1.jpg" />
+                                                <img className="hover-img" src="assets/images/product-1-2.jpg" />
                                         </a>
                                     </div>
                                     <div className="product-action-1">

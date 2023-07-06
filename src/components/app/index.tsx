@@ -38,6 +38,7 @@ class ComponentApp extends Component<PageProps, PageState> {
                     <link rel="canonical" href={commonProps.appData.apiPath.website.full}/>
                     <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
                     <meta name="author" content="Özçelik Software" />
+                    <link rel="stylesheet" href="assets/styles/main.css" />
                 </Head>
                 <ProviderNoFound {...commonProps}>
                     <ComponentHead {...commonProps} />
@@ -47,7 +48,7 @@ class ComponentApp extends Component<PageProps, PageState> {
                         <ComponentNavbar {...commonProps} />
                         <ComponentMobileNavbar {...commonProps} />
                     </header>
-                    <ComponentBackToTop {...commonProps} />
+                    {/*<ComponentBackToTop {...commonProps} />*/}
                     <main className="main">
                         <this.props.Component {...commonProps} />
                     </main>

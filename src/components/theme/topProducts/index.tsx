@@ -21,7 +21,7 @@ export default class ComponentThemeTopProducts extends Component<PageProps, Page
                     <div className="row">
                         <div className="col-lg-3 col-md-6 mb-sm-5 mb-md-0">
                             <div className="banner-img wow fadeIn animated mb-md-4 mb-lg-0">
-                                <img src="images/banner-10.jpg" />
+                                <img src="assets/images/banner-10.jpg" />
                                     <div className="banner-text">
                                         <span>Shoes Zone</span>
                                         <h4>Save 17% on <br/>All Items</h4>
@@ -35,7 +35,7 @@ export default class ComponentThemeTopProducts extends Component<PageProps, Page
                             <div className="product-list-small wow fadeIn animated">
                                 <article className="row align-items-center">
                                     <figure className="col-md-4 mb-0">
-                                        <a href="shop-product-right.html"><img src="images/thumbnail-3.jpg" /></a>
+                                        <a href="shop-product-right.html"><img src="assets/images/thumbnail-3.jpg" /></a>
                                     </figure>
                                     <div className="col-md-8 mb-0">
                                         <h4 className="title-small">
@@ -49,7 +49,7 @@ export default class ComponentThemeTopProducts extends Component<PageProps, Page
                                 </article>
                                 <article className="row align-items-center">
                                     <figure className="col-md-4 mb-0">
-                                        <a href="shop-product-right.html"><img src="images/thumbnail-4.jpg" /></a>
+                                        <a href="shop-product-right.html"><img src="assets/images/thumbnail-4.jpg" /></a>
                                     </figure>
                                     <div className="col-md-8 mb-0">
                                         <h4 className="title-small">
@@ -63,7 +63,7 @@ export default class ComponentThemeTopProducts extends Component<PageProps, Page
                                 </article>
                                 <article className="row align-items-center">
                                     <figure className="col-md-4 mb-0">
-                                        <a href="shop-product-right.html"><img src="images/thumbnail-5.jpg" /></a>
+                                        <a href="shop-product-right.html"><img src="assets/images/thumbnail-5.jpg" /></a>
                                     </figure>
                                     <div className="col-md-8 mb-0">
                                         <h4 className="title-small">
@@ -83,7 +83,7 @@ export default class ComponentThemeTopProducts extends Component<PageProps, Page
                             <div className="product-list-small wow fadeIn animated">
                                 <article className="row align-items-center">
                                     <figure className="col-md-4 mb-0">
-                                        <a href="shop-product-right.html"><img src="images/thumbnail-6.jpg" /></a>
+                                        <a href="shop-product-right.html"><img src="assets/images/thumbnail-6.jpg" /></a>
                                     </figure>
                                     <div className="col-md-8 mb-0">
                                         <h4 className="title-small">
@@ -97,7 +97,7 @@ export default class ComponentThemeTopProducts extends Component<PageProps, Page
                                 </article>
                                 <article className="row align-items-center">
                                     <figure className="col-md-4 mb-0">
-                                        <a href="shop-product-right.html"><img src="images/thumbnail-7.jpg" /></a>
+                                        <a href="shop-product-right.html"><img src="assets/images/thumbnail-7.jpg" /></a>
                                     </figure>
                                     <div className="col-md-8 mb-0">
                                         <h4 className="title-small">
@@ -111,7 +111,7 @@ export default class ComponentThemeTopProducts extends Component<PageProps, Page
                                 </article>
                                 <article className="row align-items-center">
                                     <figure className="col-md-4 mb-0">
-                                        <a href="shop-product-right.html"><img src="images/thumbnail-8.jpg" /></a>
+                                        <a href="shop-product-right.html"><img src="assets/images/thumbnail-8.jpg" /></a>
                                     </figure>
                                     <div className="col-md-8 mb-0">
                                         <h4 className="title-small">
@@ -130,7 +130,7 @@ export default class ComponentThemeTopProducts extends Component<PageProps, Page
                             <div className="product-list-small wow fadeIn animated">
                                 <article className="row align-items-center">
                                     <figure className="col-md-4 mb-0">
-                                        <a href="shop-product-right.html"><img src="images/thumbnail-9.jpg" /></a>
+                                        <a href="shop-product-right.html"><img src="assets/images/thumbnail-9.jpg" /></a>
                                     </figure>
                                     <div className="col-md-8 mb-0">
                                         <h4 className="title-small">
@@ -144,7 +144,7 @@ export default class ComponentThemeTopProducts extends Component<PageProps, Page
                                 </article>
                                 <article className="row align-items-center">
                                     <figure className="col-md-4 mb-0">
-                                        <a href="shop-product-right.html"><img src="images/thumbnail-1.jpg" /></a>
+                                        <a href="shop-product-right.html"><img src="assets/images/thumbnail-1.jpg" /></a>
                                     </figure>
                                     <div className="col-md-8 mb-0">
                                         <h4 className="title-small">
@@ -158,7 +158,7 @@ export default class ComponentThemeTopProducts extends Component<PageProps, Page
                                 </article>
                                 <article className="row align-items-center">
                                     <figure className="col-md-4 mb-0">
-                                        <a href="shop-product-right.html"><img src="images/thumbnail-2.jpg" /></a>
+                                        <a href="shop-product-right.html"><img src="assets/images/thumbnail-2.jpg" /></a>
                                     </figure>
                                     <div className="col-md-8 mb-0">
                                         <h4 className="title-small">

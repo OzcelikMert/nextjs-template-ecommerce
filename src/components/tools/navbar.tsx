@@ -11,9 +11,6 @@ import {LanguageGetResultDocument} from "types/services/language";
 import {NavigationGetResultDocument} from "types/services/navigation";
 
 type PageState = {
-    isNavbarSticky: boolean;
-    navbarLinks: React.ReactNode
-    languages: React.ReactNode
 };
 
 type PageProps = {} & PagePropCommonDocument<{}>;
@@ -21,121 +18,8 @@ type PageProps = {} & PagePropCommonDocument<{}>;
 export default class ComponentNavbar extends Component<PageProps, PageState> {
     constructor(props: PageProps) {
         super(props);
-        this.state = {
-            isNavbarSticky: false,
-            navbarLinks: this.props.themeData.navigations.map((navigation) =>
-                <this.NavLink nav={navigation}/>),
-            languages: (<this.Languages/>)
-        };
+        this.state = {};
     }
-
-    componentDidMount() {
-        this.setEvents();
-    }
-
-    componentWillUnmount() {
-        this.clearEvents();
-    }
-
-    setEvents() {
-        window.addEventListener("scroll", () => this.handleScroll());
-    }
-
-    clearEvents() {
-        window.removeEventListener("scroll", () => this.handleScroll());
-    }
-
-    handleScroll() {
-        if (window.scrollY > 300) {
-            if (!this.state.isNavbarSticky) {
-                this.setState({
-                    isNavbarSticky: true,
-                });
-            }
-        } else {
-            if (this.state.isNavbarSticky) {
-                this.setState({
-                    isNavbarSticky: false,
-                });
-            }
-        }
-    }
-
-    NavLink = (props: { nav: NavigationGetResultDocument, mainId?: string }) => {
-        let self = this;
-        if (props.nav.mainId?._id != props.mainId) return null;
-        let subNavs = this.props.themeData.navigations.findMulti("mainId._id", props.nav._id);
-
-        function DropDown() {
-            function Item(dropDownItemProps: NavigationGetResultDocument) {
-                let dropDownSubNavs = self.props.themeData.navigations.findMulti("mainId._id", dropDownItemProps._id);
-                return dropDownSubNavs.length > 0
-                    ? <self.NavLink nav={dropDownItemProps} mainId={props.nav._id}/>
-                    :
-                    <NavDropdown.Item href={LinkUtil.target(self.props.appData, dropDownItemProps.contents?.url || "")}>
-                        {dropDownItemProps.contents?.title}
-                    </NavDropdown.Item>
-
-            }
-
-            return (
-                <NavDropdown title={props.nav.contents?.title} id={props.nav._id} drop={props.mainId ? "end" : "down"}>
-                    {
-                        subNavs.map(subNav => <Item {...subNav} />)
-                    }
-                </NavDropdown>
-            );
-        }
-
-        function Link() {
-            return (<Nav.Link
-                href={LinkUtil.target(self.props.appData, props.nav.contents?.url || "")}>{props.nav.contents?.title}</Nav.Link>)
-        }
-
-        return subNavs.length > 0
-            ? <DropDown/>
-            : <Link/>;
-    };
-
-    Languages = () => {
-        let self = this;
-        let current = this.props.appData.languages.findSingle("_id", this.props.appData.languageId);
-
-        function Item(props: LanguageGetResultDocument) {
-            return (
-                <div>
-                    <div className="d-inline-block">
-                        <Image
-                            className="img-fluid flag-size"
-                            src={self.props.appData.apiPath.uploads.flags + props.image}
-                            alt={props.title}
-                            width={35}
-                            height={35}
-                        />
-                    </div>
-                    <div className="d-inline-block ms-1">
-                        <span>{props.title}</span>
-                    </div>
-                </div>
-            );
-        }
-
-
-        return current ? (
-            <NavDropdown title={<Item {...current} />} id="languages">
-                {
-                    this.props.appData.languages.map((lang) =>
-                        this.props.appData.languageId != lang._id
-                            ? (<NavDropdown.Item href={LinkUtil.changeLanguage(this.props.appData, lang)}>
-                                {
-                                    <Item {...lang}/>
-                                }
-                            </NavDropdown.Item>) : null
-                    )
-                }
-            </NavDropdown>
-        ) : null;
-    };
 
     render() {
         return (
@@ -143,7 +27,7 @@ export default class ComponentNavbar extends Component<PageProps, PageState> {
                 <div className="container">
                     <div className="header-wrap header-space-between position-relative">
                         <div className="logo logo-width-1 d-block d-lg-none">
-                            <a href="index.html"><img src="fonts/logo.svg" alt="logo"/></a>
+                            <a href="index.html"><img src="assets/fonts/logo.svg" alt="logo"/></a>
                         </div>
                         <div className="header-nav d-none d-lg-flex">
                             <div className="main-categori-wrap d-none d-lg-block">
@@ -208,7 +92,7 @@ export default class ComponentNavbar extends Component<PageProps, PageState> {
                                                     </li>
                                                     <li className="mega-menu-col col-lg-5">
                                                         <div className="header-banner2">
-                                                            <img src="images/menu-banner-2.jpg" alt="menu_banner1"/>
+                                                            <img src="assets/images/menu-banner-2.jpg" alt="menu_banner1"/>
                                                                 <div className="banne_info">
                                                                     <h6>10% Off</h6>
                                                                     <h4>New Arrival</h4>
@@ -216,7 +100,7 @@ export default class ComponentNavbar extends Component<PageProps, PageState> {
                                                                 </div>
                                                         </div>
                                                         <div className="header-banner2">
-                                                            <img src="images/menu-banner-3.jpg" alt="menu_banner2" />
+                                                            <img src="assets/images/menu-banner-3.jpg" alt="menu_banner2" />
                                                                 <div className="banne_info">
                                                                     <h6>15% Off</h6>
                                                                     <h4>Hot Deals</h4>
@@ -282,7 +166,7 @@ export default class ComponentNavbar extends Component<PageProps, PageState> {
                                                     </li>
                                                     <li className="mega-menu-col col-lg-5">
                                                         <div className="header-banner2">
-                                                            <img src="images/menu-banner-4.jpg" alt="menu_banner1"/>
+                                                            <img src="assets/images/menu-banner-4.jpg" alt="menu_banner1"/>
                                                                 <div className="banne_info">
                                                                     <h6>10% Off</h6>
                                                                     <h4>New Arrival</h4>
@@ -350,7 +234,7 @@ export default class ComponentNavbar extends Component<PageProps, PageState> {
                                                     </li>
                                                     <li className="mega-menu-col col-lg-5">
                                                         <div className="header-banner2">
-                                                            <img src="images/menu-banner-5.jpg" alt="menu_banner1"/>
+                                                            <img src="assets/images/menu-banner-5.jpg" alt="menu_banner1"/>
                                                                 <div className="banne_info">
                                                                     <h6>10% Off</h6>
                                                                     <h4>New Arrival</h4>
@@ -358,7 +242,7 @@ export default class ComponentNavbar extends Component<PageProps, PageState> {
                                                                 </div>
                                                         </div>
                                                         <div className="header-banner2">
-                                                            <img src="images/menu-banner-6.jpg" alt="menu_banner2"/>
+                                                            <img src="assets/images/menu-banner-6.jpg" alt="menu_banner2"/>
                                                                 <div className="banne_info">
                                                                     <h6>15% Off</h6>
                                                                     <h4>Hot Deals</h4>
@@ -480,7 +364,7 @@ export default class ComponentNavbar extends Component<PageProps, PageState> {
                                                 <li className="sub-mega-menu sub-mega-menu-width-34">
                                                     <div className="menu-banner-wrap">
                                                         <a href="shop-product-right.html"><img
-                                                            src="images/menu-banner.jpg" alt="Evara"/></a>
+                                                            src="assets/images/menu-banner.jpg" alt="Evara"/></a>
                                                         <div className="menu-banner-content">
                                                             <h4>Hot deals</h4>
                                                             <h3>Don't miss<br/> Trending</h3>
@@ -545,13 +429,13 @@ export default class ComponentNavbar extends Component<PageProps, PageState> {
                             <div className="header-action-2">
                                 <div className="header-action-icon-2">
                                     <a href="shop-wishlist.html">
-                                        <img alt="Evara" src="fonts/icon-heart.svg"/>
+                                        <img alt="Evara" src="assets/fonts/icon-heart.svg"/>
                                             <span className="pro-count white">4</span>
                                     </a>
                                 </div>
                                 <div className="header-action-icon-2">
                                     <a className="mini-cart-icon" href="shop-cart.html">
-                                        <img alt="Evara" src="fonts/icon-cart.svg"/>
+                                        <img alt="Evara" src="assets/fonts/icon-cart.svg"/>
                                             <span className="pro-count white">2</span>
                                     </a>
                                     <div className="cart-dropdown-wrap cart-dropdown-hm2">
@@ -559,7 +443,7 @@ export default class ComponentNavbar extends Component<PageProps, PageState> {
                                             <li>
                                                 <div className="shopping-cart-img">
                                                     <a href="shop-product-right.html"><img alt="Evara"
-                                                                                           src="images/thumbnail-3.jpg"/></a>
+                                                                                           src="assets/images/thumbnail-3.jpg"/></a>
                                                 </div>
                                                 <div className="shopping-cart-title">
                                                     <h4><a href="shop-product-right.html">Plain Striola Shirts</a></h4>
@@ -572,7 +456,7 @@ export default class ComponentNavbar extends Component<PageProps, PageState> {
                                             <li>
                                                 <div className="shopping-cart-img">
                                                     <a href="shop-product-right.html"><img alt="Evara"
-                                                                                           src="images/thumbnail-4.jpg"/></a>
+                                                                                           src="assets/images/thumbnail-4.jpg"/></a>
                                                 </div>
                                                 <div className="shopping-cart-title">
                                                     <h4><a href="shop-product-right.html">Macbook Pro 2022</a></h4>

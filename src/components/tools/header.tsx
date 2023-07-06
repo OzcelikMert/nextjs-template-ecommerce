@@ -14,7 +14,7 @@ export default class ComponentHeader extends Component<PageProps, PageState> {
                 <div className="container">
                     <div className="header-wrap">
                         <div className="logo logo-width-1">
-                            <a href="index.html"><img src="fonts/logo.svg" alt="logo" /></a>
+                            <a href="index.html"><img src="assets/fonts/logo.svg" alt="logo" /></a>
                         </div>
                         <div className="header-right">
                             <div className="search-style-2">
@@ -39,13 +39,13 @@ export default class ComponentHeader extends Component<PageProps, PageState> {
                                 <div className="header-action-2">
                                     <div className="header-action-icon-2">
                                         <a href="shop-wishlist.html">
-                                            <img className="svgInject" alt="Evara" src="fonts/icon-heart.svg" />
+                                            <img className="svgInject" alt="Evara" src="assets/fonts/icon-heart.svg" />
                                                 <span className="pro-count blue">4</span>
                                         </a>
                                     </div>
                                     <div className="header-action-icon-2">
                                         <a className="mini-cart-icon" href="shop-cart.html">
-                                            <img alt="Evara" src="fonts/icon-cart.svg" />
+                                            <img alt="Evara" src="assets/fonts/icon-cart.svg" />
                                                 <span className="pro-count blue">2</span>
                                         </a>
                                         <div className="cart-dropdown-wrap cart-dropdown-hm2">
@@ -53,7 +53,7 @@ export default class ComponentHeader extends Component<PageProps, PageState> {
                                                 <li>
                                                     <div className="shopping-cart-img">
                                                         <a href="shop-product-right.html"><img alt="Evara"
-                                                                                               src="images/thumbnail-3.jpg" /></a>
+                                                                                               src="assets/images/thumbnail-3.jpg" /></a>
                                                     </div>
                                                     <div className="shopping-cart-title">
                                                         <h4><a href="shop-product-right.html">Daisy Casual Bag</a></h4>
@@ -66,7 +66,7 @@ export default class ComponentHeader extends Component<PageProps, PageState> {
                                                 <li>
                                                     <div className="shopping-cart-img">
                                                         <a href="shop-product-right.html"><img alt="Evara"
-                                                                                               src="images/thumbnail-2.jpg" /></a>
+                                                                                               src="assets/images/thumbnail-2.jpg" /></a>
                                                     </div>
                                                     <div className="shopping-cart-title">
                                                         <h4><a href="shop-product-right.html">Corduroy Shirts</a></h4>

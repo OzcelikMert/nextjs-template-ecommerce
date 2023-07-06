@@ -24,25 +24,25 @@ export default class ComponentThemeFeaturedBrands extends Component<PageProps, P
                              id="carausel-6-columns-3-arrows"></div>
                         <div className="carausel-6-columns text-center" id="carausel-6-columns-3">
                             <div className="brand-logo">
-                                <img className="img-grey-hover" src="images/brand-1.png" />
+                                <img className="img-grey-hover" src="assets/images/brand-1.png" />
                             </div>
                             <div className="brand-logo">
-                                <img className="img-grey-hover" src="images/brand-2.png" />
+                                <img className="img-grey-hover" src="assets/images/brand-2.png" />
                             </div>
                             <div className="brand-logo">
-                                <img className="img-grey-hover" src="images/brand-3.png" />
+                                <img className="img-grey-hover" src="assets/images/brand-3.png" />
                             </div>
                             <div className="brand-logo">
-                                <img className="img-grey-hover" src="images/brand-4.png" />
+                                <img className="img-grey-hover" src="assets/images/brand-4.png" />
                             </div>
                             <div className="brand-logo">
-                                <img className="img-grey-hover" src="images/brand-5.png" />
+                                <img className="img-grey-hover" src="assets/images/brand-5.png" />
                             </div>
                             <div className="brand-logo">
-                                <img className="img-grey-hover" src="images/brand-6.png" />
+                                <img className="img-grey-hover" src="assets/images/brand-6.png" />
                             </div>
                             <div className="brand-logo">
-                                <img className="img-grey-hover" src="images/brand-3.png" />
+                                <img className="img-grey-hover" src="assets/images/brand-3.png" />
                             </div>
                         </div>
                     </div>
