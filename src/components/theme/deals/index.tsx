@@ -21,7 +21,7 @@ export default class ComponentThemeDeals extends Component<PageProps, PageState>
                     <div className="row">
                         <div className="col-lg-6 deal-co">
                             <div className="deal wow fadeIn animated mb-md-4 mb-sm-4 mb-lg-0"
-                                 style={{backgroundImage: "url(&#x27;assets/images/menu-banner-7.jpg&#x27;)"}}>
+                                 style={{backgroundImage: "url(/assets/images/menu-banner-7.jpg)"}}>
                                 <div className="deal-top">
                                     <h2 className="text-brand">Deal of the Day</h2>
                                     <h5>Limited quantities.</h5>
@@ -42,7 +42,7 @@ export default class ComponentThemeDeals extends Component<PageProps, PageState>
                         </div>
                         <div className="col-lg-6 deal-co">
                             <div className="deal wow fadeIn animated"
-                                 style={{backgroundImage: "url(&#x27;assets/images/menu-banner-8.jpg&#x27;)"}}>
+                                 style={{backgroundImage: "url(assets/images/menu-banner-8.jpg)"}}>
                                 <div className="deal-top">
                                     <h2 className="text-brand">Men Clothing</h2>
                                     <h5>Shirt & Bag</h5>

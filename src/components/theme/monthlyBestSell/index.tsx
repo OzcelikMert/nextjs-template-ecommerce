@@ -4,6 +4,7 @@ import {Carousel} from "react-responsive-carousel";
 import {PostGetManyResultDocument} from "types/services/post";
 import {PagePropCommonDocument} from "types/pageProps";
 import Image from "next/image";
+import Slider from "react-slick";
 
 type PageState = {};
 
@@ -13,6 +14,36 @@ export default class ComponentThemeMonthlyBestSell extends Component<PageProps, 
     constructor(props: PageProps) {
         super(props);
     }
+    sliderRef = React.createRef<Slider>();
+
+    settings = {
+        dots: false,
+        infinite: true,
+        speed: 1000,
+        arrows: false,
+        autoplay: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        loop: true,
+        adaptiveHeight: true,
+        centerMode: true,
+        responsive: [
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ],
+    };
 
     render() {
         return (
@@ -62,10 +93,11 @@ export default class ComponentThemeMonthlyBestSell extends Component<PageProps, 
                                 <div className="tab-pane fade show active" id="tab-one-1" role="tabpanel"
                                      aria-labelledby="tab-one-1">
                                     <div className="carausel-4-columns-cover arrow-center position-relative">
-                                        <div className="slider-arrow slider-arrow-2 carausel-4-columns-arrow"
-                                             id="carausel-4-columns-arrows"></div>
-                                        <div className="carausel-4-columns carausel-arrow-center"
-                                             id="carausel-4-columns">
+                                        <div className="slider-arrow slider-arrow-2 carausel-4-columns-arrow">
+                                            <span className="slider-btn slider-prev"><i className="fi-rs-angle-left"></i></span>
+                                            <span className="slider-btn slider-next"><i className="fi-rs-angle-right"></i></span>
+                                        </div>
+                                        <Slider className="carausel-4-columns carausel-arrow-center" {...this.settings}>
                                             <div className="product-cart-wrap">
                                                 <div className="product-img-action-wrap">
                                                     <div className="product-img product-img-zoom">
@@ -301,7 +333,7 @@ export default class ComponentThemeMonthlyBestSell extends Component<PageProps, 
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </Slider>
                                     </div>
                                 </div>
                                 <div className="tab-pane fade" id="tab-two-1" role="tabpanel"

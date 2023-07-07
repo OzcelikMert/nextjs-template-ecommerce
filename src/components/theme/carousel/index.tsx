@@ -11,10 +11,11 @@ type PageState = {};
 type PageProps = {} & PagePropCommonDocument<{ sliders: PostGetManyResultDocument[] }>;
 
 export default class ComponentThemeCarousel extends Component<PageProps, PageState> {
+    sliderRef = React.createRef<Slider>();
+
     constructor(props: PageProps) {
         super(props);
     }
-
 
     settings = {
         slidesToShow: 1,
@@ -22,16 +23,14 @@ export default class ComponentThemeCarousel extends Component<PageProps, PageSta
         fade: true,
         loop: true,
         dots: true,
-        arrows: true,
-        prevArrow: <span><div className="slider-arrow hero-slider-1-arrow"><span className="slider-btn slider-prev"><i className="mdi mdi-chevron-left"></i></span></div></span>,
-        nextArrow: <span><div className="slider-arrow hero-slider-1-arrow"><span className="slider-btn slider-next"><i className="mdi mdi-chevron-right"></i></span></div></span>,
+        arrows: false,
         autoplay: true,
     };
 
     render() {
         return (
             <section className="home-slider position-relative pt-50">
-                <Slider className="hero-slider-1 dot-style-1 dot-style-1-position-1" {...this.settings}>
+                <Slider className="hero-slider-1 dot-style-1 dot-style-1-position-1" {...this.settings} ref={this.sliderRef}>
                     <div>
                         <div className="container">
                             <div className="row align-items-center slider-animated-1">
@@ -96,6 +95,10 @@ export default class ComponentThemeCarousel extends Component<PageProps, PageSta
                         </div>
                     </div>
                 </Slider>
+                <div className="slider-arrow hero-slider-1-arrow">
+                    <span className="slider-btn slider-prev fs-5"><i className="mdi mdi-chevron-left"></i></span>
+                    <span className="slider-btn slider-next fs-5"><i className="mdi mdi-chevron-right"></i></span>
+                </div>
             </section>
         );
     }

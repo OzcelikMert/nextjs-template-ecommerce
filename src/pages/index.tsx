@@ -2,12 +2,12 @@ import {PagePropCommonDocument} from "types/pageProps";
 import React, {Component} from "react";
 import {GetServerSidePropsContext} from 'next'
 import "styles/pages/home.module.scss";
-import ComponentCarousel from "components/theme/carousel";
 import SelectedComponents from "components/selectedComponents";
 import postService from "services/post.service";
 import {PageTypeId, PostTypeId, StatusId} from "constants/index";
 import {PostGetManyResultDocument} from "types/services/post";
 import pageLib from "lib/page.lib";
+
 import ComponentThemeFeatures from "components/theme/features";
 import ComponentThemeProductTabs from "components/theme/productTabs";
 import ComponentThemeBannerOne from "components/theme/bannerOne";
@@ -17,6 +17,9 @@ import ComponentThemeFeaturedBrands from "components/theme/featuredBrands";
 import ComponentThemeMonthlyBestSell from "components/theme/monthlyBestSell";
 import ComponentThemeBannerTwo from "components/theme/bannerTwo";
 import ComponentThemeTopProducts from "components/theme/topProducts";
+import ComponentThemeNewArrivals from "components/theme/newArrivals";
+import ComponentCarousel from "components/theme/carousel";
+import ComponentThemeBannerThree from "components/theme/bannerThree";
 
 type PageState = {};
 
@@ -38,6 +41,8 @@ export default class PageHome extends Component<PageProps, PageState> {
                     <ComponentThemeProductTabs {...this.props} />
                     <ComponentThemeBannerOne {...this.props} />
                     <ComponentThemePopularCategories {...this.props} />
+                    <ComponentThemeBannerThree {...this.props} />
+                    <ComponentThemeNewArrivals {...this.props} />
                     <ComponentThemeDeals {...this.props} />
                     <ComponentThemeFeaturedBrands {...this.props} />
                     <ComponentThemeMonthlyBestSell {...this.props} />

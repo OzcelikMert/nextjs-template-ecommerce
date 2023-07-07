@@ -4,6 +4,7 @@ import {Carousel} from "react-responsive-carousel";
 import {PostGetManyResultDocument} from "types/services/post";
 import {PagePropCommonDocument} from "types/pageProps";
 import Image from "next/image";
+import Slider from "react-slick";
 
 type PageState = {};
 
@@ -13,6 +14,40 @@ export default class ComponentThemeNewArrivals extends Component<PageProps, Page
     constructor(props: PageProps) {
         super(props);
     }
+    sliderRef = React.createRef<Slider>();
+
+    settings = {
+        dots: false,
+        infinite: true,
+        speed: 1000,
+        arrows: false,
+        autoplay: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        loop: true,
+        adaptiveHeight: true,
+        centerMode: true,
+        responsive: [
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ],
+    };
 
     render() {
         return (
@@ -20,9 +55,11 @@ export default class ComponentThemeNewArrivals extends Component<PageProps, Page
                 <div className="container wow fadeIn animated">
                     <h3 className="section-title mb-20"><span>New</span> Arrivals</h3>
                     <div className="carausel-6-columns-cover position-relative">
-                        <div className="slider-arrow slider-arrow-2 carausel-6-columns-arrow"
-                             id="carausel-6-columns-2-arrows"></div>
-                        <div className="carausel-6-columns carausel-arrow-center" id="carausel-6-columns-2">
+                        <div className="slider-arrow slider-arrow-2 carausel-6-columns-arrow">
+                            <span className="slider-btn slider-prev"><i className="fi-rs-angle-left"></i></span>
+                            <span className="slider-btn slider-next"><i className="fi-rs-angle-right"></i></span>
+                        </div>
+                        <Slider className="carausel-6-columns carausel-arrow-center" {...this.settings}>
                             <div className="product-cart-wrap small hover-up">
                                 <div className="product-img-action-wrap">
                                     <div className="product-img product-img-zoom">
@@ -251,7 +288,7 @@ export default class ComponentThemeNewArrivals extends Component<PageProps, Page
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </Slider>
                     </div>
                 </div>
             </section>
