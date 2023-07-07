@@ -28,16 +28,12 @@ type PageProps = {} & PagePropCommonDocument<{
   categories: PostTermGetResultDocument[];
 }>;
 
-export default class PageBlogURL extends Component<PageProps, PageState> {
+export default class PageProducts extends Component<PageProps, PageState> {
   constructor(props: PageProps) {
     super(props);
   }
 
   render() {
-    if (!this.props.themeData.blog) {
-      return <ComponentError404 appData={this.props.appData} />;
-    }
-
     return (
       <div className="container">
         <div className="row flex-row-reverse">

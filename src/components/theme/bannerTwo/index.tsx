@@ -16,7 +16,7 @@ export default class ComponentThemeBannerTwo extends Component<PageProps, PageSt
 
     render() {
         return (
-            <section className="mb-50">
+            <section className="mb-50 mt-50">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
