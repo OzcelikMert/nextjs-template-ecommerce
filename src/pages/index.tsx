@@ -56,13 +56,13 @@ export default class PageHome extends Component<PageProps, PageState> {
 export async function getServerSideProps(context: GetServerSidePropsContext) {
     let req = context.req;
 
-    await pageLib.get(req, "", PageTypeId.HomePage)
+   /* await pageLib.get(req, "", PageTypeId.HomePage)
 
     req.themeData.sliders = (await postService.getMany({
         langId: req.appData.languageId,
         typeId: [PostTypeId.Slider],
         statusId: StatusId.Active
-    })).data;
+    })).data;*/
 
     return {
         props: pageLib.getReturnData(req),

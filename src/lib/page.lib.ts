@@ -31,9 +31,9 @@ export default {
     },
     getReturnData(req: IncomingMessage) : Omit<PagePropCommonDocument<{}>, "router"> {
         return {
-            appData: req.appData,
-            themeData: req.themeData,
-            pageData: req.pageData
+            appData: req.appData ?? null,
+            themeData: req.themeData ?? null,
+            pageData: req.pageData ?? null
         }
     }
 }

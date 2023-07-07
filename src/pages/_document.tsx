@@ -17,9 +17,9 @@ export default class HTMLDocument extends Component<PageProps, PageState> {
 
     render() {
         let appData = this.props.__NEXT_DATA__.props.pageProps.appData;
-        let language = appData.languages.findSingle("_id", appData.languageId);
+       // let language = appData.languages.findSingle("_id", appData.languageId);
         return (
-            <Html lang={language ? linkUtil.languageUpperLocale(language) : ""}>
+            <Html lang={/*language ? linkUtil.languageUpperLocale(language) : ""*/""}>
                 <Head/>
                 <body>
                 <Main/>

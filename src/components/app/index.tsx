@@ -33,15 +33,15 @@ class ComponentApp extends Component<PageProps, PageState> {
         return (
             <div>
                 <Head>
-                    <link rel="shortcut icon"
+                    { /*<link rel="shortcut icon"
                           href={imageSourceUtil.getUploadedImageSrc(commonProps.appData.settings.icon, commonProps.appData.apiPath.uploads)}/>
-                    <link rel="canonical" href={commonProps.appData.apiPath.website.full}/>
+                    <link rel="canonical" href={commonProps.appData.apiPath.website.full}/>*/ }
                     <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
                     <meta name="author" content="Özçelik Software" />
                     <link rel="stylesheet" href="assets/styles/main.css" />
                 </Head>
                 <ProviderNoFound {...commonProps}>
-                    <ComponentHead {...commonProps} />
+                    {/*<ComponentHead {...commonProps} /> */}
                     <header className="header-area header-style-1 header-height-2">
                         <ComponentTopBar {...commonProps} />
                         <ComponentHeader {...commonProps} />

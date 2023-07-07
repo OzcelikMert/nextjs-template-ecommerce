@@ -20,7 +20,7 @@ import pageLib from "lib/page.lib";
 import i18Lib from "lib/i18.lib";
 
 function App(props: AppProps) {
-    i18Lib.init(props.pageProps.appData)
+   // i18Lib.init(props.pageProps.appData)
     return (
         <ComponentApp {...props.pageProps} Component={props.Component} router={props.router}/>
     )
@@ -36,7 +36,7 @@ App.getInitialProps = async (props: AppContext) => {
             'public, s-maxage=10, stale-while-revalidate=59'
         );
 
-        req.themeData = {
+        /*req.themeData = {
             ...req.themeData
         }
 
@@ -61,7 +61,7 @@ App.getInitialProps = async (props: AppContext) => {
             await settingLib.get(req);
         }
 
-        await themeLib.getTools(req);
+        await themeLib.getTools(req);*/
 
         return {
             pageProps: pageLib.getReturnData(req)

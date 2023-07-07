@@ -20,7 +20,7 @@ export default class ComponentFooter extends Component<PageProps, PageState> {
     constructor(props: PageProps) {
         super(props);
         this.state = {
-            component: this.props.themeData.footer,
+            component: this.props.themeData?.footer,
             isSubmittingSubscribe: false,
             isSuccessSubscribe: false,
             formData: {
